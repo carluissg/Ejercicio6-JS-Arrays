@@ -1,60 +1,59 @@
 const enfermos = [
   {
     paciente: {
-      nombre: 'Manuel',
+      nombre: "Manuel",
       edad: 25,
-      sexo: 'H'
+      sexo: "H"
     },
     diasIngresado: 3,
-    dieta: 'Baja en fibra'
+    dieta: "Baja en fibra"
   },
   {
     paciente: {
-      nombre: 'Marta',
+      nombre: "Marta",
       edad: 56,
-      sexo: 'M'
+      sexo: "M"
     },
     diasIngresado: 5,
-    dieta: 'Diabetes'
+    dieta: "Diabetes"
   },
   {
     paciente: {
-      nombre: 'Julia',
+      nombre: "Julia",
       edad: 38,
-      sexo: 'M'
+      sexo: "M"
     },
     diasIngresado: 1,
-    dieta: 'Sin sal'
+    dieta: "Sin sal"
   },
   {
     paciente: {
-      nombre: 'Esteban',
+      nombre: "Esteban",
       edad: 40,
-      sexo: 'H'
+      sexo: "H"
     },
     diasIngresado: 3,
-    dieta: 'Diabetes'
+    dieta: "Diabetes"
   },
   {
     paciente: {
-      nombre: 'Arturo',
+      nombre: "Arturo",
       edad: 19,
-      sexo: 'H'
+      sexo: "H"
     },
     diasIngresado: 2,
-    dieta: 'Baja en fibra'
+    dieta: "Baja en fibra"
   },
   {
     paciente: {
-      nombre: 'Isabel',
+      nombre: "Isabel",
       edad: 63,
-      sexo: 'M'
+      sexo: "M"
     },
     diasIngresado: 6,
-    dieta: 'Sin sal'
+    dieta: "Sin sal"
   }
 ];
-
 
 const informeMedico = enfermos => {
   const nPacientesHospitalizados = enfermos => enfermos.length;
@@ -72,7 +71,7 @@ const informeMedico = enfermos => {
   return {
     nPacientesHospitalizados, nMayoriadeEdad, nPersonasDiabeticas, nDiasIngresosenHospital, MediadeEdadMujeres
   };
-}
+};
 
 const Hospital = informeMedico(enfermos);
 
